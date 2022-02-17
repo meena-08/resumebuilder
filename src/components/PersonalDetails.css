@@ -1,0 +1,34 @@
+.personal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Dongle', sans-serif;
+  font-family: 'Lora', serif;
+}
+
+.personal .personal-heading{
+    color: white;
+    max-height: 80px;
+    margin-bottom: 10px;
+}
+
+.personal .personal-icons{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1px;
+    /* text-align: center; */
+}
+
+.personal .personal-icons .icons button{
+    margin-left: 50px;
+    margin-right: 45px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
