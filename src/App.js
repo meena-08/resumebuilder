@@ -1,13 +1,21 @@
 import './App.css';
-import Homepage from './pages/homepage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import LandingPage from './components/LandingPage';
+import Navbar from './components/Navbar';
+import PersonalDetails from './components/PersonalDetails';
 
 function App() {
   return (
-    
-    <div> 
-      <Homepage/>
+          <Router>
+    <div>
+        <Navbar/>
+        <Routes>
+          <Route  path="/" exact element={<LandingPage/>}/>
+          <Route  path="/personaldetails" exact element={<PersonalDetails/>}/>
+        </Routes>
     </div>
-
+    </Router>  
   );
 }
 

@@ -1,0 +1,47 @@
+body{
+    background-image: linear-gradient(to right, #136a8a,#267871);
+    width: 100%;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Lora', serif;
+}
+
+.landing{
+    /* background: linear-gradient(to right, #136a8a,#267871); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.landing .up-landing{
+    max-height: 80px;
+    color: white;
+    font-size: 18px;
+}
+
+.landing .down-landing {
+    color: white;
+}
+
+.landing .down-landing button{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+@media only screen and (max-width: 900px){
+    .landing .up-landing{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .landing .down-landing{
+        font-size: 15px;
+    }
+}
